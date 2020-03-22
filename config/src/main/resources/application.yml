@@ -1,0 +1,15 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8762/eureka
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/niumoo/config-repo
+          username: niumoo@126.com
+          password: Asd839819864
+          basedir: D:\IdeaProjectMy\springcloud\config\basedir
