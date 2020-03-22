@@ -39,7 +39,7 @@
                 <scope>import</scope>
             </dependency>
             <dependency>
-                <groupId>com.imooc</groupId>
+                <groupId>com.wdbyte</groupId>
                 <artifactId>product-common</artifactId>
                 <version>${product-common.version}</version>
             </dependency>
