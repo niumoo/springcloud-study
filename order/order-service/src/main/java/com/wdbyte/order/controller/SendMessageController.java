@@ -17,12 +17,12 @@ import java.util.Date;
  * @Date 2020/3/31 21:40
  */
 @RestController
-public class SendMessage {
+public class SendMessageController {
 
     @Autowired
     private SteamClient steamClient;
 
-    @GetMapping(SteamClient.INPUT)
+    @GetMapping("/send")
     public void process() {
         Message<String> build = MessageBuilder.withPayload("now" + new Date()).build();
         steamClient.output().send(build);
